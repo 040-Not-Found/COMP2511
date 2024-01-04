@@ -1,0 +1,3 @@
+1. I changed checkValidEnrolment method in CourseOffering by replacing the for loops to stream. I also replace the pass course condition to enrolment.hasPassedCourse and deleted the grade != null condition as the enrolment.hasPassedCourse has considered this condition. Then the method will return false if enrolment.getCourse().equals(prereq) && !enrolment.hasPassedCourse()
+
+2. I changed the isEnrolled and setGrade methods by replacing the for loop to stream.

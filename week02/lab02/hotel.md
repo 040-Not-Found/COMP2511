@@ -1,0 +1,3 @@
+1. I changed the interface class Room to abstruct class as the class EnsuiteRoom, StandardRoom and PenthouseRoom have the same book, removeBooking, changeBooking and toJSON(very similar) functions. So this will violate the DRY principle.
+2. To reduce this, I had make some common codes of book, removeBooking, changeBooking and toJSON in the absturct class Room.
+3. This also reduced the code complexity as the different type of rooms are the abstruct class Room, so that I can call functions using the same function name. When we need toJSON the information, we can put different type of rooms into an ArrayList, then we can decrease the code complexity base on the proporty.
